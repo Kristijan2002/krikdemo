@@ -1,0 +1,106 @@
+@use '../../styles/variables.scss' as var;
+
+
+.accessibility{
+    position: fixed;
+    top: 22%;
+    right: 0;
+
+
+.accessibilityBtn{
+    padding: 15px 10px;
+    background-color: var.$background_color_3;
+    border: none;
+    border-radius: 20px 0px 0px 20px;
+    color: var.$color_3;
+    padding: 10px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+@media (min-width: 1024px) {
+    .accessibilityBtn{
+        top: 30%;    
+    }
+}
+
+.accessibilityMenu{
+    position: fixed;
+    right: 0;
+    top: 22%;
+    width: 650px;
+    height: 700px;
+    right: -100%;
+    transition: right 0.3s ease-in-out;
+    border-radius: 0px 0px 40px 40px;
+    background: #ffffffbf;
+    font-family: var.$font_family_mulish;
+
+    .menuHeader{
+        background-color: var.$background_color_3;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        border-top-left-radius: 20px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .XLToggle{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        margin-top: 41px;
+        div{
+            display: flex;
+            padding: 0 19px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            background-color: var.$background_color_6;
+            font-size: 32px;
+            color: var.$color_1;
+        }
+
+        .toggleBtn{
+            background-color: transparent;
+        }
+    }
+
+    .row{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 51px;
+
+        .col{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 45%;
+            background-color: var.$background_color_6;
+            border-radius: 20px;
+            color: var.$color_1;
+            text-align: center;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            padding: 16px;
+
+            svg{
+                padding-bottom: 5px;
+            }
+        }
+    }
+  
+}
+
+
+.accessibilityMenu.active{
+    right: 0;
+}
+
+}

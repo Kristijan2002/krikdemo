@@ -1,0 +1,36 @@
+@use '../../styles/variables.scss' as var;
+
+
+.aboutUsBanner{
+    display: flex;
+    width: 80%;
+    margin: 100px auto;
+    align-items: center;
+
+    .imgDiv{
+        mix-blend-mode: luminosity;
+    }
+    
+    .textDiv{
+        padding-left: 30px;
+        
+        h5{
+            color: var.$color_1;
+            font-family: var.$font_family_mulish;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 48px;
+            margin-bottom: 30px;
+        }
+        
+        p{
+            color: var.$color_1;
+            font-family: var.$font_family_montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 40px;
+        }
+    }
+}

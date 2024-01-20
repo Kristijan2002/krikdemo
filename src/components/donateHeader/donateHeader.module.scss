@@ -1,0 +1,61 @@
+@use '../../styles/variables.scss' as var;
+
+.headerDiv{
+    font-family: var.$font_family_mulish;
+
+    h1{
+        text-align: center;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 64px;
+        color: var.$color_1;
+        margin-top: 100px;
+    }
+
+    
+    .header{
+        width: 70%;
+        margin: 100px auto;
+        border-bottom: 1px solid black;
+        
+        ul {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        padding: 0;
+        position: relative;
+        color: black;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        
+        li{
+            position: relative;
+            padding: 30px 25px 30px 25px;
+            cursor: pointer;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px;
+        }
+    
+        li::after {
+            position: absolute;
+        content: "";
+        top: 105%;
+        left: -25%;
+        width: 150%;
+        height: 10px;
+        border-radius: 5px;
+        background: var.$color_5;
+        transform: scaleX(0);
+        transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    
+    li:hover::after, li.active::after {
+        transform: scaleX(1);
+    }
+}
+}
+}

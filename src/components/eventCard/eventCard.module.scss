@@ -1,0 +1,171 @@
+@use '../../styles/variables.scss' as var;
+
+@media (min-width: 1024px) {
+    .eventCardLeft{
+        .paragraph{
+            line-height: 35px !important;
+        }
+
+        .btnDiv{
+                margin-top: 0 !important;
+            .seeMoreBtn, .signUp{
+                font-size: 20px !important;
+                padding: 10px 16px !important;
+            }
+        }
+    }
+}
+
+.eventCard{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -160px;
+    display: flex;
+    border-radius: 40px;
+    border-bottom: 10px solid var.$color_1;
+    height: 657px;
+    background-color: var.$background_color_1;
+
+    .eventCardLeft{
+        width: 50%;
+        background-color: var.$background_color_1;
+        border-top-left-radius: 40px;
+        border-bottom-left-radius: 40px;
+        padding: 20px;
+        
+        .when{
+            font-family: var.$font_family_mulish;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 48px;
+            text-transform: uppercase;
+            color: var.$color_2;
+            padding: 10px 50px 20px;
+            padding-top: 70px;
+        }
+        .title{
+            color: var.$color_3;
+            font-family: var.$font_family_raleway;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px;
+            padding: 0 50px 20px;  
+        }
+        .paragraph{
+            color: #FFF;
+            font-family: var.$font_family_montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 40px;
+            margin: 0 50px;
+        }
+        .btnDiv{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            padding: 0 50px;
+            padding-top: 65px;
+            font-family: var.$font_family_mulish;
+
+            .seeMoreBtn, .signUp{
+                display: flex;
+                width: 45%;
+                padding: 16px 30px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                align-self: stretch;
+                border: none;
+                color: var.$color_1;
+                text-align: center;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 32px;
+                border-radius: 30px;
+            }
+            .seeMoreBtn{
+                background-color: var.$background_color_2;
+            }
+            .signUp{
+                background-color: var.$background_color_4;
+            }
+        }
+    }
+    
+    .eventCardRight{
+        position: relative;
+        width: 50%;
+        background-color: var.$background_color_5;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+        .date{
+            position: absolute;
+            right: 0;
+            top: -1px;
+            display: flex;
+            width: 129px;
+            height: 127px;
+            padding: 20px 27px;
+            justify-content: center;
+            flex-wrap: wrap;
+            border-radius: 30px;
+            background-color: var.$background_color_1;
+            color: var.$color_3;
+            text-align: center;
+            font-size: 56px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            font-family: var.$font_family_raleway;
+            
+            span{
+                color: var.$color_3;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }
+        .title{
+            color: var.$color_4;
+            font-family: var.$font_family_mulish;
+            font-size: 52px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 48px; 
+            display: flex;
+            justify-content: center;
+            margin-top: 150px;
+            padding: 0 50px;
+        }
+        .locationAndTime{
+            display: flex;
+            justify-content: center;
+            padding-top: 120px;
+            color: var.$color_4;
+            font-family: var.$font_family_mulish;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 48px;
+          
+        }
+        .dotted{
+            height: auto;
+            display: flex;
+            margin-top: 60px;
+            .dot{
+                width: 10%;
+                border-radius: 50%;
+                height: 100%;
+                aspect-ratio: 1/1;
+            }
+        }
+    }
+}
+
